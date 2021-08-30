@@ -1551,3 +1551,8 @@
             background: #F16D7F;
             border: none;
         }
+        
+        .check_box_btn:hover {
+            background: #FFFFFF;
+            color: #F16D7F;
+        }
