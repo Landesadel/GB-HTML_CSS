@@ -1556,3 +1556,8 @@
             background: #FFFFFF;
             color: #F16D7F;
         }
+        
+        .check_box_btn:active {
+            background: #F16D7F;
+            color: #FFFFFF;
+        }
