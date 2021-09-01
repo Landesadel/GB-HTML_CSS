@@ -613,9 +613,14 @@
         
         .advantages_block {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            align-items: center;
             background-color: #222224;
-            padding: 103px 230px;
+            width: 100%;
+            padding: 20px 0;
+            min-height: 341px;
+            margin: 0 auto;
+            flex-wrap: wrap;
         }
         
         .adv_top_card {
@@ -645,12 +650,18 @@
         .footer_info {
             background-image: url(img/background_ft_subscribe.jpg);
             background-repeat: no-repeat;
-            padding: 100px 239px;
-        }
-        
-        .ft_info_box {
+            background-size: cover;
+            background-position: center;
+            min-height: 480px;
+            max-width: 1600px;
+            width: 100%;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 20px;
+            margin: 0 auto;
         }
         
         .info_item1 {
