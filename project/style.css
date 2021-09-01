@@ -314,6 +314,10 @@
             background-repeat: no-repeat;
             background-position: left;
             margin-bottom: 64px;
+            display: flex;
+            justify-content: flex-end;
+            padding: 0 14%;
+            box-sizing: border-box;
         }
         
         .header_background:hover {
@@ -321,9 +325,8 @@
         }
         
         .header_items {
-            padding-left: 830px;
+            position: relative;
             padding-top: 290px;
-            width: 480px;
         }
         
         .header_banner {
@@ -1561,3 +1564,5 @@
             background: #F16D7F;
             color: #FFFFFF;
         }
+        
+        @media screen and (max-width: 1024px) {}
