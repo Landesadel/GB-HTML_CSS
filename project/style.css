@@ -495,6 +495,7 @@
         flex-wrap: wrap;
         max-width: 100%;
         margin: 0 auto;
+        padding: 0 103px;
     }
     
     .work_block {
@@ -1680,5 +1681,105 @@
         /* нижняя часть футера */
         .footer_bottom {
             padding: 24px 32px;
+        }
+    }
+    
+    @media only screen and (max-width: 375px) {
+        .container {
+            max-width: 100%;
+        }
+        button.account_btn {
+            display: none;
+        }
+        .cart_icon_box {
+            display: none;
+        }
+        .nav_item2 {
+            margin: 0px 16px 0 0;
+        }
+        .nav_item2:hover button.account_btn {
+            display: block;
+        }
+        .nav_item2:hover .cart_icon_box {
+            display: block;
+        }
+        .header_background {
+            background-image: none;
+        }
+        .header_items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 24px 0 0;
+        }
+        .production_sector {
+            padding: 64px 15px 0 15px;
+        }
+        .product_item1 {
+            max-width: 343px;
+            max-height: 247px;
+            margin: 0 0 32px 0;
+        }
+        .product_item2 {
+            max-width: 343px;
+            max-height: 247px;
+            margin: 0 0 32px 0;
+        }
+        .product_item3 {
+            max-width: 343px;
+            max-height: 247px;
+            margin: 0 0 32px 0;
+        }
+        .product_item4 {
+            background-size: 205%;
+            width: 100%;
+            max-height: 111px;
+        }
+        .work_block {
+            margin: 64px 8px 96px 8px;
+        }
+        .work_header {
+            margin: 0 0 64px 0;
+        }
+        .card_item {
+            margin-bottom: 15px;
+        }
+        .adv_top_card {
+            margin: 0 0 40px 0;
+        }
+        .info_item1 {
+            margin: 0 0 59px 0;
+        }
+        .ft_info_txt {
+            width: 343px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        .info_item_title {
+            line-height: 35px;
+        }
+        .info_item_text {
+            font-size: 14px;
+            line-height: 15px;
+            margin: 0px 0 22px 0;
+        }
+        .form_email {
+            padding: 6px 61px 6px 21px;
+            border-radius: 25px 0 0 25px;
+        }
+        .form_btn {
+            padding: 13px;
+        }
+        .footer_bottom {
+            flex-direction: column-reverse;
+            padding: 43px 32px 9px 32px;
+        }
+        .ft_block_link {
+            margin-bottom: 40px;
+        }
+        .footer_info {
+            padding: 64px 0 120px 0;
+            background-position-x: -451px;
+            background-position-y: 21px;
         }
     }
