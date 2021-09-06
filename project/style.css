@@ -699,7 +699,6 @@ body {
     flex-wrap: wrap;
     align-items: center;
     box-sizing: border-box;
-    padding: 20px;
     margin: 0 auto;
 }
 
@@ -799,11 +798,16 @@ body {
     color: #FFFFFF;
 }
 
-.footer_bottom {
+.footer_background_bottom {
     background-color: #222224;
+}
+
+.footer_bottom {
+    max-width: 1140px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 2% 11%;
+    padding: 2% 0%;
     align-items: center;
 }
 
