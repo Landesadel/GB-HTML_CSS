@@ -162,7 +162,7 @@ body {
     background-color: #fff;
     list-style: none;
     position: absolute;
-    top: 14%;
+    top: 25%;
     right: 0%;
     z-index: 20;
     box-shadow: 1px 11px 15px 0px #e5e5e5;
@@ -913,9 +913,9 @@ body {
     color: #F16D7F;
 }
 
-.top_select_list li+li::before {
+.top_select_list li:nth-child(-n+2)::after {
     padding: 8px;
-    color: black;
+    color: #636363;
     content: "/\00a0";
 }
 
@@ -944,6 +944,9 @@ body {
     padding-top: 51px;
     display: flex;
     justify-content: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 5%;
 }
 
 
@@ -1082,20 +1085,22 @@ body {
 /*форма trending*/
 
 .settings {
-    margin: 0 380px 64px 380px;
-    display: flex;
-    flex-wrap: nowrap;
+    margin: 0 auto;
 }
 
 .list_set {
+    display: flex;
+    min-width: 296px;
     border: none;
     background-color: transparent;
 }
 
 .list_btn_title {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
     width: 100%;
-    margin-right: 28px;
     border: none;
     font-style: normal;
     font-weight: normal;
@@ -1106,6 +1111,15 @@ body {
     text-align: left;
     text-transform: uppercase;
     position: relative;
+}
+
+.list_btn_mini_ttl {
+    margin-right: 1%;
+    min-width: 123px;
+}
+
+.list_btn_mini_ttl2 {
+    margin-right: 8%;
 }
 
 .list_size_btn_title .svg_filter {
@@ -1141,7 +1155,8 @@ body {
     z-index: 21;
     position: absolute;
     flex-direction: column;
-    margin: 5px 0 0 0;
+    left: 52%;
+    margin: 18px 0 0 0;
     padding: 9px 35px 10px 31px;
     box-sizing: border-box;
     background-color: #fff;
