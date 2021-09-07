@@ -539,10 +539,9 @@ body {
     box-sizing: border-box;
 }
 
-
-/* .card_item:nth-child(3n) { 
-     margin: 0 0 30px 0;
-    }    */
+.card_item:nth-child(3n) {
+    margin: 0 0 30px 0;
+}
 
 .card_item:hover .img_card {
     filter: brightness(50%)
@@ -669,7 +668,7 @@ body {
 }
 
 .adv_top_txt {
-    width: 360px;
+    width: 315px;
     font-weight: 300;
     font-size: 13.972px;
     line-height: 17px;
@@ -1200,6 +1199,22 @@ body {
 }
 
 
+/* карточки товара */
+
+.card_item_catalog {
+    width: 360px;
+    position: relative;
+    background-color: #F8F8F8;
+    margin: 0 30px 30px 0;
+    display: block;
+    box-sizing: border-box;
+}
+
+.card_item_catalog:nth-child(3n) {
+    margin: 0 0 30px 0;
+}
+
+
 /*пагинация*/
 
 .pagin_box {
@@ -1694,9 +1709,6 @@ input[type="number"]::-webkit-inner-spin-button {
 /* страница регистрации */
 
 
-/* страница регистрации */
-
-
 /* общий блок регистрации */
 
 .rgst_content {
@@ -1890,16 +1902,16 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     /* Блок с карточками товара */
     .work_block {
-        margin: 154px 0px 64px 10px;
+        margin: 154px 0px 64px 0;
     }
     .work_header {
         margin: 0 0 73px 0;
     }
-    .card_item {
-        margin: 0 10px 10px 0;
+    .card_item:nth-child(1n) {
+        margin: 0 20px 10px 0;
     }
-    .card_item:nth-child(3n) {
-        margin: 0 10px 10px 0;
+    .card_item:nth-child(2n) {
+        margin: 0 0 10px 0;
     }
     .button_prod {
         margin-top: 36px;
@@ -1926,6 +1938,36 @@ input[type="number"]::-webkit-inner-spin-button {
     /* нижняя часть футера */
     .footer_bottom {
         padding: 24px 32px;
+    }
+    /* Страница catalog */
+    /* 1 блок */
+    .top_block {
+        justify-content: space-between;
+        padding: 0 16px;
+    }
+    .production_catalog {
+        margin-top: 21px;
+    }
+    /* блок с настройками */
+    .product_filter {
+        justify-content: space-between;
+        padding: 0 16px;
+    }
+    .settings {
+        margin: 0;
+    }
+    /* Блок с карточками товара */
+    .card_item_catalog:nth-child(1n) {
+        margin: 0 20px 10px 0;
+    }
+    .card_item_catalog:nth-child(2n) {
+        margin: 0 0 10px 0;
+    }
+    .card_item_catalog:last-child {
+        display: none;
+    }
+    .pagin_box {
+        margin: 40px 0 63px 0;
     }
 }
 
@@ -1981,13 +2023,16 @@ input[type="number"]::-webkit-inner-spin-button {
         max-height: 111px;
     }
     .work_block {
-        margin: 64px 0px 96px 10px;
+        margin: 64px 0px 96px 0;
     }
     .work_header {
         margin: 0 0 64px 0;
     }
-    .card_item {
-        margin-bottom: 15px;
+    .card_item:nth-child(1n) {
+        margin: 0 0 15px 0;
+    }
+    .card_item:last-child {
+        margin: 0;
     }
     .adv_top_card {
         margin: 0 0 40px 0;
@@ -2017,7 +2062,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .footer_bottom {
         flex-direction: column-reverse;
-        padding: 43px 32px 9px 32px;
+        padding: 43px 0 16px 0;
     }
     .ft_block_link {
         margin-bottom: 40px;
@@ -2027,4 +2072,44 @@ input[type="number"]::-webkit-inner-spin-button {
         background-position-x: -451px;
         background-position-y: 21px;
     }
+    /* страница Catalog */
+    /* первый блок */
+    .top_block {
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+    /* блок с настройками */
+    .product_filter {
+        padding: 0;
+        max-width: 359px;
+    }
+    .filter_txt {
+        display: none;
+    }
+    .svg_filter {
+        width: 37px;
+        height: 25px;
+    }
+    .list_set {
+        min-width: 260px;
+    }
+    .list_btn_mini_ttl {
+        min-width: 101px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .list_btn_mini_ttl2 {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    /* блок с карточками товара */
+    .card_item_catalog:nth-child(1n) {
+        margin: 0 0 16px 0;
+    }
+    .card_item_catalog:last-child {
+        display: block;
+        margin: 0;
+    }
+    /* блок пагинации */
 }
