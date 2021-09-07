@@ -1490,30 +1490,43 @@ body {
     color: #EF5B70;
 }
 
-.product_quantity_cell {
-    border: 1px solid #575757;
-    padding: 1px 16px;
+.product_quantity_cell_label {
+    display: flex;
+}
+
+#product_quantity_cell {
+    border: none;
+    border: solid #EAEAEA;
+    width: 42px;
+    height: 21px;
+    text-align: center;
     margin-left: 24px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 
 /* крестик карточки товара */
 
-.cart_box_product_mini_hd::before,
-.cart_box_product_mini_hd::after {
+.cart_box_product_btnclose::before,
+.cart_box_product_btnclose::after {
     content: "";
     display: block;
-    width: 25px;
-    height: 3px;
+    width: 31px;
+    height: 2px;
     background: #6F6E6E;
     border-radius: 10px;
-    position: absolute;
-    top: 9px;
-    left: 300px;
+    position: relative;
+    top: 32px;
+    left: 51px;
     transform: rotate( 45deg);
 }
 
-.cart_box_product_mini_hd::after {
+.cart_box_product_btnclose::after {
     transform: rotate( -45deg);
 }
 
