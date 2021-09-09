@@ -1801,6 +1801,20 @@ input[type="number"]::-webkit-inner-spin-button {
     margin: 30px 10px 33px 0;
 }
 
+.registr_form_input_radio2 {
+    margin: 30px 10px 33px 0;
+    display: none;
+}
+
+.registr_label2 {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    margin: 0 20px 0 0;
+    display: none;
+}
+
 .registr_label {
     font-weight: 300;
     font-size: 11px;
@@ -2168,6 +2182,59 @@ input[type="number"]::-webkit-inner-spin-button {
     .check_box_btn {
         margin-bottom: 42px;
     }
+    /* страница registration */
+    .top_block_cart {
+        margin-bottom: 40px;
+    }
+    /* блок form */
+    .registr_section {
+        width: 88%;
+        margin: 0 0 135px 0;
+    }
+    .registr_form_input {
+        color: #B1B1B1;
+        opacity: 0.6;
+    }
+    .registr_form_input_radio2 {
+        display: inline;
+    }
+    .registr_label2 {
+        display: inline;
+    }
+    .registr_form_input2 {
+        color: #B1B1B1;
+        opacity: 0.6;
+    }
+    .registr_form_txt_bttm {
+        line-height: 15px;
+    }
+    /* блок-инфо */
+    .registr_info {
+        max-width: 354px;
+        margin: 0 0 128px 0;
+    }
+    .registr_info_mini_hd {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        width: 177px;
+        margin: 0 0 32px 0;
+    }
+    .registr_info_txt {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        width: 354px;
+        margin: 0 0 22px 0;
+    }
+    .registr_info_list_item {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    ul.registr_ifo_list {
+        max-width: 80%;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -2446,5 +2513,35 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .check_box_btn {
         font-size: 15px;
+    }
+    /* страница registration */
+    /* блок form */
+    .registr_content {
+        flex-direction: column;
+        padding: 0 8px;
+        max-width: 375px;
+    }
+    .registr_section {
+        width: 100%;
+    }
+    .registr_form_input {
+        width: 95%;
+    }
+    .registr_form_input2 {
+        width: 95%;
+    }
+    .registr_info {
+        margin: 0 auto;
+        margin-bottom: 96px;
+    }
+    .registr_info_txt {
+        width: 100%;
+    }
+    .registr_info_list_item {
+        padding-left: 41px;
+        margin: 0px 0 18px 0;
+    }
+    ul.registr_ifo_list {
+        width: 100%;
     }
 }
